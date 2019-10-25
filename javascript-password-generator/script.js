@@ -25,21 +25,30 @@ passwordBtn.addEventListener("click", function(e) {
     function promptTypes() {
         if (confirm("Do you want to add uppercase letters?")) {
             tempValues = tempValues + upperCase;
+        } else {
+            tempValues = tempValues - upperCase;
             console.log(tempValues);            
         }
         if (confirm("Do you want to add lowercase letters?")) {
             tempValues = tempValues + lowerCase;
             console.log(tempValues);
+        } else {
+            tempValues = tempValues - lowerCase;
         }
         if (confirm("Do you want to add numbers?")) {
             tempValues = tempValues + numbers;
             console.log(tempValues);
+        } else {
+            tempValues = tempValues - numbers;
         }
         if (confirm("Do you want to add special characters?")) {
             tempValues = tempValues + specialChar;
             console.log(tempValues);
-        }
-    }
+        } else {
+            tempValues = tempValues - specialChar;
+        } 
+    };
+
     promptTypes();
 
     var password = "";
