@@ -2,7 +2,6 @@
 
 //set variable for writing to html
 var displayContent = $('#gameContent');
-var highScore = document.getElementById('score');
 
 
 //store value of timer in variable 
@@ -147,10 +146,3 @@ $(document).on('click', '#replay', function (e) {
 $(document).on('click', '.choices', function (e) {
     trivia.selected(e);
 });
-
-
-$(document).on('click', "#score", function (e){
-    trivia.correct(e);
-})
-
-localStorage.setItem("score", highScore.val()
