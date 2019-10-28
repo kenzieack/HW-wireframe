@@ -44,6 +44,7 @@ var trivia = {
     correct: 0,
     incorrect: 0,
     missed: 0,
+    highScore: 0,
     tickingClock: function () {
         trivia.clock--;
         $('#secondsLeft').html(trivia.clock);
@@ -146,3 +147,8 @@ $(document).on('click', '#replay', function (e) {
 $(document).on('click', '.choices', function (e) {
     trivia.selected(e);
 });
+//if user clicks highscore button it will show 
+ var triviaStored = JSON.stringify(trivia);
+ localStorage.setItam("triva", triviaStored);
+ var triviaResults = JSON.parse(localStorage.getItem(trivia));
+ 
