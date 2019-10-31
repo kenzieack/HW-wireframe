@@ -1,0 +1,95 @@
+.body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1;
+}
+
+#header {
+    text-align: center;
+    color: black;
+    border-bottom: 10px solid darkblue;
+
+}
+
+.textArea {
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+    width:100%;
+    min-height: 80px;
+}
+
+.description{
+    white-space: pre-wrap;
+    padding:0;
+  }
+
+.time-block {
+    text-align: center;
+}
+
+.row {
+    white-space: pre-wrap;
+    min-height: 80px;
+    margin-top: 2.25px;
+    border-top: 1.25px solid lightgrey;
+    
+}
+
+.hour {
+    background-color: linen ;
+    color:black;
+    border-top: 1px dashed black;
+    border-left: 1px dashed black
+}
+
+.dayHour {
+    margin-bottom: 0;
+}
+
+.past {
+    background-color: rgb(32, 178, 170);
+    color: lightgray;
+    cursor: pointer;
+}
+
+.present {
+    background-color: #9e0800;
+    color: white;
+    cursor: pointer;
+}
+
+.future {
+    background-color: #4e0658;
+    color: white;
+    cursor: text;
+    cursor: pointer;
+}
+
+.saveBtn {
+    background-color: rgb(57, 58, 139);
+    color: rgb(201, 195, 226);
+    cursor: pointer;
+    min-height: 80px;
+    background-color: #06AED5;
+    color: rgb(201, 195, 226);
+    cursor: pointer;
+    position: relative;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-shadow: #06AED5
+}
+
+#icon:hover {
+    font-size: 40px;
+    transition: all .2s ease-in-out;
+}
+
+#icon {
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-top: 5px;
+}
